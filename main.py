@@ -25,7 +25,7 @@ def get_link(fact):
 def home():
     fact = get_fact().strip()
     link = get_link(fact)
-    return bytes(link, 'utf-8')
+    return '<a href="{}">{}</a>'.format(link, link)
 
 
 if __name__ == "__main__":
